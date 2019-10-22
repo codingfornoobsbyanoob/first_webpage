@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+     body {
+	background-color: grey;
+	margin:0px
+}
+
+     h1 {
+	color: white;
+	text-align: center;
+}
+
+     p {
+	color: white;
+	text-align: center;
+}
+
+
+
+</style>
+<title>My first web page</title>
+</head>
+<body>
+<h1>My awesome noob web page</h1>
+<p>Here's some more text</p>
+<button>Click me</button>
+<div id='myDiv'></div>
+
+
+
+<script>
+
+	var myName = 'Steve'
+
+	function myFunction() {
+	//alert(`Hi ${myName}. You just clicked the button`)
+	window.document.getElementById('myDiv').innerHTML = `<H1>Hi ${myName}. You just clicked the button</H1>`
+
+	
+}
+
+document.querySelector('button').onclick = myFunction
+
+	
+</script>
+
+</body>
+
+</html>
